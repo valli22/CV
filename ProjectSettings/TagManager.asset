@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Passed
+  - Bug
+  - Bala
   layers:
   - Default
   - TransparentFX
