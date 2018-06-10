@@ -22,6 +22,7 @@ public class Bala : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 		if (other.transform.tag == "Bug") {
+			LevelManagerGameplayConcInf.instance.BugFixed ();
 			Destroy (other.gameObject);
 			Destroy (this.gameObject);
 		}
