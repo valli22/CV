@@ -31,6 +31,7 @@ public class LevelManagerConcInf : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
 		}
 
 	}
@@ -41,6 +42,7 @@ public class LevelManagerConcInf : MonoBehaviour {
 			gameplay.SetActive (true);
 
 		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 
 	void OnDisable(){

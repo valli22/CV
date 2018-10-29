@@ -65,6 +65,11 @@ public class LevelManagerGameplayConcInf : MonoBehaviour {
 
 	void OnEnable(){
 		bugsCounter = 0;
+		Invoke ("SpawnBug",spawnRate);
+	}
+
+	void OnDisable(){
+		CancelInvoke ();
 	}
 
 	public void Restart(){
